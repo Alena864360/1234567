@@ -1,0 +1,15 @@
+#include <stdio.h>
+  
+int main()
+{
+    unsigned char a = 0b1101; // число 15  
+ 
+    unsigned char bit_1 = (a >> 1) & 1;
+
+    unsigned char bit_2 = (a >> 2) & 1;
+    
+    unsigned char b = bit_1 ^ bit_2;
+    unsigned char d = a ^ (b << 1 | b << 2);
+    printf("c: %f\n", v);
+    return 0;
+}
