@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int size = 7; 
+    for (int z = 1; z <= size; z++) 
+    {
+        for (int k = 1; k <= size; k++) 
+        {
+            if (z == k || z + k == size + 1 || z == 1 || z == size)
+                printf("*");
+            else
+                printf(" ");
+        }
+
+        printf("\n");  
+    }
+    return 0;
+}
