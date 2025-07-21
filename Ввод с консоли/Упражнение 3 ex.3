@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int V;
+    char N [20];
+
+    printf("Ваш возраст: ");
+    scanf("%d", &V);
+
+    printf("Ваше имя: ");
+    scanf("%20[^\n]", N);
+     
+    printf("ИМЯ: %s \t ВОЗРАСТ = %d", N,  V);
+    return 0;
+}
