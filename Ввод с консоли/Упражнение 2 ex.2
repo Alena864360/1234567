@@ -1,0 +1,19 @@
+#include <stdio.h>
+  
+int main( )
+{
+    char M [10]; 
+    int R;
+    double K;
+    printf("Input R and K:");
+    if (fgets(M, 10, stdin) != NULL)
+    {
+        sscanf(M, "%d %lf", &R, &K);
+        printf("K: %.2lf \tR: %d \n", K , R );
+    }
+    else
+    {
+        printf("Fatal Error!\n");
+    }
+    return 0;
+}
