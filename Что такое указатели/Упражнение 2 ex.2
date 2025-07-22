@@ -1,0 +1,11 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int a = 16;
+    int *pa = &a;
+    printf("Before change: %d \n", *pa);    // Before change: 10
+    *pa = 100;
+    printf("After change: %d \n", *pa);     // After change: 22
+    return 0;
+}
