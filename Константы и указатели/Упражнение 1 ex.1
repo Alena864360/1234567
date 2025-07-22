@@ -1,0 +1,11 @@
+#include <stdio.h>
+ 
+int main()
+{
+    const long a = 3;
+    const long *pa = &a;
+    char *const hello = "Hello";
+    printf("Constant: %ld\n", *pa); 
+    printf("Const pointer: %s\n", hello);       
+    return 0;
+}
